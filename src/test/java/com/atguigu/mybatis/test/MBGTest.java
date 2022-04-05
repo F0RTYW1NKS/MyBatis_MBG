@@ -33,6 +33,7 @@ public class MBGTest {
             empExample.or().andDidIsNotNull();
             List<Emp> emps1 = mapper.selectByExample(empExample);
             System.out.println(emps1);
+            System.out.println("hot-fix test");
 
             //修改
             mapper.updateByPrimaryKey(new Emp(1, "admin", 22, "女", "123@qq.com", 3));
