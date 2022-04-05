@@ -28,11 +28,11 @@ public class MBGTest {
             //    System.out.println(emp);
             //}
             //根据条件查询
-            //EmpExample empExample = new EmpExample();
-            //empExample.createCriteria().andEmpNameEqualTo("张三").andAgeGreaterThan(20);
-            //empExample.or().andDidIsNotNull();
-            //List<Emp> emps1 = mapper.selectByExample(empExample);
-            //System.out.println(emps1);
+            EmpExample empExample = new EmpExample();
+            empExample.createCriteria().andEmpNameEqualTo("张三").andAgeGreaterThan(20);
+            empExample.or().andDidIsNotNull();
+            List<Emp> emps1 = mapper.selectByExample(empExample);
+            System.out.println(emps1);
 
             //修改
             mapper.updateByPrimaryKey(new Emp(1, "admin", 22, "女", "123@qq.com", 3));
